@@ -36,6 +36,7 @@ def render_set(model_path, name, iteration, views, gaussians, pipeline, backgrou
         base_color_path = os.path.join(render_path, 'base_color')
         refl_color_path = os.path.join(render_path, 'refl_color')
         refl_strength_path = os.path.join(render_path, 'refl_strength')
+        # save object, environment, and normal maps
         makedirs(base_color_path, exist_ok=True)
         makedirs(refl_color_path, exist_ok=True)
         makedirs(refl_strength_path, exist_ok=True)
